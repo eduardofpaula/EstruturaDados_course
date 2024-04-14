@@ -1,0 +1,35 @@
+ponteiro em C 
+
+Em C, um ponteiro é uma variável que armazena o endereço de memória de outra variável. Em outras palavras, um ponteiro é uma referência para a localização de um valor na memória.
+
+Os ponteiros são úteis quando precisamos manipular e acessar diretamente a memória em um programa. Eles nos permitem realizar operações como passar argumentos por referência em funções, alocar dinamicamente memória, manipular arrays e estruturas de dados complexas, entre outras coisas.
+
+Para declarar um ponteiro em C, usamos o operador de asterisco (*) antes do nome da variável. Por exemplo:
+
+Nesse exemplo, ponteiro é um ponteiro para um valor do tipo int. Podemos atribuir o endereço de memória de uma variável a esse ponteiro usando o operador de endereço (&). Por exemplo:
+
+Agora, o ponteiro ponteiro contém o endereço de memória da variável valor. Podemos acessar o valor armazenado nessa posição de memória usando o operador de desreferência (*). Por exemplo:
+
+Nesse caso, o operador *ponteiro desreferencia o ponteiro, ou seja, acessa o valor armazenado no endereço de memória apontado por ponteiro, que é 10.
+
+É importante ter cuidado ao trabalhar com ponteiros, pois eles podem levar a erros como acessar áreas inválidas de memória ou causar vazamentos de memória. É fundamental entender bem como os ponteiros funcionam e garantir que sejam usados corretamente para evitar esses problemas.
+
+Sintaxe de exemplo de ponteiro em C:
+
+#include <stdio.h>
+
+int main() {
+    int valor = 20; // declaração de uma variável inteira
+    int *ponteiro; // declaração de um ponteiro para int
+
+    ponteiro = &valor; // armazenando o endereço de valor em ponteiro
+
+    printf("Endereço de memória de valor: %p\n", (void *)&valor);
+    printf("Endereço de memória armazenado em ponteiro: %p\n", (void *)ponteiro);
+    printf("Valor de valor: %d\n", valor);
+    printf("Valor apontado por ponteiro: %d\n", *ponteiro);
+
+    return 0;
+}
+
+Neste exemplo, valor é uma variável do tipo int e ponteiro é um ponteiro para int. Atribuímos o endereço de memória de valor a ponteiro usando o operador de endereço &. Em seguida, imprimimos o endereço de memória de valor e o endereço armazenado em ponteiro (que devem ser os mesmos), bem como o valor de valor e o valor apontado por ponteiro (que também devem ser os mesmos).

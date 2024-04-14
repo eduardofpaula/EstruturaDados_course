@@ -1,0 +1,7 @@
+Lista Encadeada
+
+A lista encadeada é uma estrutura de dados que consiste em uma sequência de elementos, onde cada elemento é um nó que contém um valor e um ponteiro para o próximo elemento da lista. O último elemento da lista aponta para `null`.
+
+A lista encadeada é uma estrutura de dados dinâmica, ou seja, ela pode crescer ou diminuir conforme a necessidade. Além disso, a lista encadeada não precisa de um espaço contíguo de memória, como é o caso de um array.
+
+A lista encadeada é uma estrutura de dados muito utilizada em diversas aplicações, como por exemplo, a implementação de pilhas, filas, listas, etc.

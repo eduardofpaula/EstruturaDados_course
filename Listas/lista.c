@@ -1,3 +1,4 @@
+#include <stdio.h>
 
 struct ponto
 {
@@ -25,5 +26,7 @@ void add(float x, float y) {
 int main() {
     
     add(1,5);
+
+    printf("%.0f",listaPontos->prox->x);
 
 }

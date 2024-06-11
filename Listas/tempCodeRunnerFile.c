@@ -1,2 +1,3 @@
-printf("%.0f",listaPontos->prox->x);
-	printf("%.0f",listaPontos->prox->prox->x);
+listaPontos->x = 0;
+    listaPontos->y = 0;
+    listaPontos->prox = NULL;
